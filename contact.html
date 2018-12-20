@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akroma | Creative Design Studio</title>
+    <link rel="icon" href="asset/Home/LogoPojokKiriAtas.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<!-- Kurang h-100 lelah -->
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand ml-5" href="file:///D:/Project/Akroma/Last/index.html">
+            <span class="logo" width="30" height="30"></span>
+        </a>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+        <button class="navbar-toggler" type="button" onclick="openNav()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mr-5 active">
+                    <a class="nav-link" href="profile.html">Profile <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mr-5">
+                    <a class="nav-link" href="team.html">Teams</a>
+                </li>
+                <li class="nav-item mr-5">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="nav-link" href="profile.html">Profile <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="team.html">Teams</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <!-- Start Content -->
+
+    <div class="container h100">
+        <div class="row h-100">
+            <div class="col-md-6 my-auto text-home">
+                <h1 class="top-margin">Hi, got a project<br>
+                    to discuss with us?</h1>
+            </div>
+            <div class="col-md-6 my-6 img-float" style="background-image: url(asset/Home/LogoBesar.png); background-repeat:no-repeat; background-position:center;">
+                <div class="h100">
+                    <p class="gap-contact text-white">Raya Greenwood Golf<br>
+                        No. 18, Araya, Malang.<br><br>
+                        (+62) 812 2522 3069<br>
+                        studio.akroma@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Stop Content -->
+    <footer class="footer-section fixed-bottom">
+        <!--Footer Links-->
+        <div class="container text-center my-4">
+            <!--First column-->
+            <div class="row h-100">
+                <div class="col-md-2 mr-auto">
+                    <img class="mr-4" src="asset/Home/Behance Logo.png">
+                    <img class="mr-4" src="asset/Home/Dribbble Logo.png">
+                    <img class="mr-4" src="asset/Home/Instagram Logo.png">
+                </div>
+                <div class="col-md-10 ml-auto text-white" style="text-align: right">
+                    <div>Akroma 2018</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    /* Open the sidenav */
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    /* Close/hide the sidenav */
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+</html>

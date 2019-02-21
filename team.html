@@ -5,53 +5,52 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Akroma | Creative Design Studio</title>
-    <link rel="icon" href="asset/Home/LogoPojokKiriAtas.png" type="image/x-icon" />
+    <link rel="icon" href="static/akroma/img/LogoPojokKiriAtas.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="static/akroma/css/main.css" as="style">
+    <script type="text/JavaScript" src="static/akroma/js/main.js"></script>
 </head>
-<!-- Kurang h-100 lelah -->
-
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand ml-5" href="http://akroma.co">
+        <a class="navbar-brand ml-5" href="index.html">
             <span class="logo-hitam" width="30" height="30"></span>
         </a>
         <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button> -->
-        <button class="navbar-toggler" type="button" onclick="openNav()">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <button class="navbar-toggler light-custom-toggler" type="button"  onclick="openNav()">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
+                <li class="nav-item mr-5">
+                    <a class="nav-link" id="prof" href="profile.html">Profile</a>
+                </li>
+                <li class="nav-item mr-5">
+                    <a class="nav-link" id="team" href="team.html">Teams</a>
+                </li>
                 <li class="nav-item mr-5 active">
-                    <a class="nav-link" href="profile.html">Profile <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item mr-5">
-                    <a class="nav-link" href="team.html">Teams</a>
-                </li>
-                <li class="nav-item mr-5">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" id="cont" href="contact.html">Contact</a>
                 </li>
             </ul>
         </div>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a class="nav-link" href="profile.html">Profile <span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="team.html">Teams</a>
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" id="profile" href="profile.html">Profile</a>
+            <a class="nav-link" id="teams" href="team.html">Teams</a>
+            <a class="nav-link" id="contact" href="contact.html">Contact</a>
         </div>
     </nav>
+
     <style>
         .bg-light {
             background-color: white !important;
@@ -66,7 +65,7 @@
         }
 
         /* .logo{
-            background-image: url(../asset/Home/LogoPojokKiriAtas2.png)!important;
+            background-image: url(../img/LogoPojokKiriAtas2.png)!important;
             padding: 20px;
             background-repeat: no-repeat;
             background-position: center;
@@ -89,9 +88,10 @@
         }
     </style>
     <!-- Start Content -->
-    <div class="container">
+    <div class="container" id="main">
         <div class="row h-100">
             <div class="col-md-12 my-9 text-home">
+                <br><br><br>
                 <h1 class="color-black">We Believe In Our Talented People</h1>
                 <div class="col-md-6" style="padding:0px">
                     <p class="warp-clean text-profile">
@@ -105,113 +105,102 @@
             </div>
         </div>
     </div>
-    <div class="container my-9 centered">
+    <div class="container my-9 centered" id="main">
         <div class="row h-100">
             <div class="col-md-4 text-home">
-                <img src="asset/Teams/Bimansyah Saktiaji.png" style="width: 95%;">
+                <img src="static/akroma/img/Bimansyah Saktiaji.png" style="width: 95%;">
                 <h3 class="text-profile">Bimansyah Saktiaji</h3>
                 <p class="text-profile">Chief Executive Officer</p>
             </div>
             <div class="col-md-4 text-home">
-                <img src="asset/Teams/Basma Wiraisy.png" style="width: 95%;">
+                <img src="static/akroma/img/Basma Wiraisy.png"  style="width: 95%;">
                 <h3 class="text-profile">Basma Wiraisy</h3>
                 <p class="text-profile">Chief Communications Officer</p>
             </div>
             <div class="col-md-4 text-home">
-                <img src="asset/Teams/Kukuh Anjasmara.png" style="width: 95%;">
+                <img src="static/akroma/img/Kukuh Anjasmara.png"  style="width: 95%;">
                 <h3 class="text-profile">Kukuh Anjasmara</h3>
                 <p class="text-profile">Chief Creative Officer</p>
             </div>
             <div class="col-md-4 text-home">
-                <img src="asset/Teams/Caesar Rizky s.png" style="width: 95%;">
+                <img src="static/akroma/img/Caesar Rizky s.png"  style="width: 95%;">
                 <h3 class="text-profile">Caesar Rizky S</h3>
                 <p class="text-profile">Chief Financial Officer</p>
             </div>
             <div class="col-md-4 text-home">
-                <img src="asset/Teams/Aji Setiawan.png" style="width: 95%;">
+                <img src="static/akroma/img/Aji Setiawan.png"  style="width: 95%;">
                 <h3 class="text-profile">Aji Setiawan</h3>
                 <p class="text-profile">Art Director</p>
             </div>
             <div class="col-md-4 text-home">
-                <img src="asset/Teams/Faras Nadim.png" style="width: 95%;">
+                <img src="static/akroma/img/Faras Nadim.png"  style="width: 95%;">
                 <h3 class="text-profile">Faras Nadim Pietersz</h3>
                 <p class="text-profile">Event Director</p>
             </div>
             <div class="col-md-4 text-home">
-                <img src="asset/Teams/A. Rizkiawan.png" style="width: 95%;">
+                <img src="static/akroma/img/A. Rizkiawan.png"  style="width: 95%;">
                 <h3 class="text-profile">A. Rizkiawan</h3>
                 <p class="text-profile">Graphic Designer</p>
             </div>
             <div class="col-md-4 text-home">
-                <img src="asset/Teams/Raka Arizal.png" style="width: 95%;">
+                <img src="static/akroma/img/Raka Arizal.png"  style="width: 95%;">
                 <h3 class="text-profile">Raka Arizal</h3>
                 <p class="text-profile">Graphic Designer</p>
             </div>
             <div class="col-md-4 text-home">
-                <img src="asset/Teams/Iqbal Cadarossi.png" style="width: 95%;">
+                <img src="static/akroma/img/Iqbal Cadarossi.png"  style="width: 95%;">
                 <h3 class="text-profile">Iqbal Cadarossi</h3>
                 <p class="text-profile">Graphic Designer</p>
             </div>
             <div class="col-md-4 text-home">
-                <img src="asset/Teams/Himatyar Putra.png" style="width: 95%;">
+                <img src="static/akroma/img/Himatyar Putra.png"  style="width: 95%;">
                 <h3 class="text-profile">Himatyar Putra</h3>
                 <p class="text-profile">Graphic Designer</p>
             </div>
             <div class="col-md-4 text-home">
-                <img src="asset/Teams/M. Rafif Pangestu.png" style="width: 95%;">
+                <img src="static/akroma/img/M. Rafif Pangestu.png"  style="width: 95%;">
                 <h3 class="text-profile">M. Rafif Pangestu</h3>
                 <p class="text-profile">Illustrator</p>
             </div>
             <div class="col-md-4 text-home">
-                <img src="asset/Teams/Jessica Halim.png" style="width: 95%;">
+                <img src="static/akroma/img/Jessica Halim.png"  style="width: 95%;">
                 <h3 class="text-profile">Jessica Halim</h3>
                 <p class="text-profile">Illustrator</p>
             </div>
             <div class="col-md-4 text-home">
-                <img src="asset/Teams/Rieva Madya.png" style="width: 95%;">
+                <img src="static/akroma/img/Rieva Madya.png"  style="width: 95%;">
                 <h3 class="text-profile">Rieva Madya</h3>
                 <p class="text-profile">Accountant</p>
             </div>
             <div class="col-md-4 text-home">
-                <img src="asset/Teams/Jevy Bresma.png" style="width: 95%;">
+                <img src="static/akroma/img/Jevy Bresma.png"  style="width: 95%;">
                 <h3 class="text-profile">Jevy Bresma</h3>
                 <p class="text-profile">3D Artist</p>
             </div>
             <div class="col-md-4 text-home">
-                <img src="asset/Teams/Gertrud Tatya.png" style="width: 95%;">
+                <img src="static/akroma/img/Gertrud Tatya.png"  style="width: 95%;">
                 <h3 class="text-profile">Gertrud Tatya</h3>
                 <p class="text-profile">Copy Writer</p>
             </div>
         </div>
     </div>
     <!-- Stop Content -->
-    <footer class="footer-section">
+    <footer class="footer-section" id="main">
         <!--Footer Links-->
         <div class="container text-center my-4">
             <!--First column-->
             <div class="row h-100">
                 <div class="col-md-7 text-white textleft">
                     <div>Akroma 2018</div>
+                    <br>
                 </div>
                 <div class="col-md-4 ml-6 ">
-                    <a class="text-home mr-4 text-black" href="behance.net/akroma-studio">Behance</a>
-                    <a class="text-home mr-4 text-black" href="dribbble.com/akroma">Dribble</a>
-                    <a class="text-home mr-4 text-black" href="instagram.com/akromastudio">Instagram</a>
+                    <a class="text-home mr-4 ml-4 text-black" href="https://behance.net/akroma-studio">Behance</a>
+                    <a class="text-home mr-4 ml-4 text-black" href="https://dribbble.com/akroma">Dribble</a>
+                    <a class="text-home mr-4 ml-4 text-black" href="https://instagram.com/akromastudio">Instagram</a>
                 </div>
             </div>
         </div>
     </footer>
 </body>
-<script>
-    /* Open the sidenav */
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "100%";
-    }
-
-    /* Close/hide the sidenav */
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-    }
-</script>
-
 </html>
